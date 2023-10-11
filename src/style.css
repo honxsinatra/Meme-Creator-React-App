@@ -30,11 +30,11 @@
   }
 }
 header {
+  height: 25vh;
+  width: 100vw;
   display: flex;
-  margin-left: auto;
   background-color: black;
   color: white;
-  padding: 20px;
   align-items: center;
   overflow: scroll;
 }
@@ -43,8 +43,8 @@ header > h1 {
 }
 header > img {
   margin-left: 10mm;
-  height: 80px;
-  width: auto;
+  height: 90px;
+  width: 80px;
   border-radius: 50%;
   animation: rotate 5s linear infinite;
 }
