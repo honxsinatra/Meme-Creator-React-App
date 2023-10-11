@@ -53,24 +53,26 @@ header > h2 {
 }
 
 form {
-  display: flex;
+  height: 6vh;
+  width: 100vw;
   justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0;
 }
 form > input {
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
   border-width: 2mm;
   border-color: maroon;
-  width: 150mm;
-  height: 10mm;
-  padding-left: 10mm;
+  padding: auto;
 }
 div > button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200mm;
-  height: 10mm;
+  height: 6vh;
+  width: 80vw;
   background-color: green;
   color: white;
 }
