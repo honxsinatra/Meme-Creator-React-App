@@ -13,6 +13,7 @@ header {
   color: white;
   padding: 20px;
   align-items: center;
+  overflow: scroll;
 }
 header > h1 {
   margin-left: 5mm;
@@ -51,9 +52,13 @@ div > button {
   color: white;
 }
 .img {
-  max-width: 100%;
-  height: auto;
+  height: 65vh;
+  width: auto;
+  object-fit: cover;
 }
+/*max-width: 100%;
+  height: auto;*/
+
 .margin {
   margin-right: 10mm;
 }
@@ -65,6 +70,7 @@ div > button {
   position: relative;
   display: inline-block;
 }
+
 .topText,
 .bottomText {
   position: absolute;
@@ -74,6 +80,8 @@ div > button {
   font-family: Arial, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-wrap: break-word;
+  cursor: grab;
+  user-select: none;
 }
 .topText {
   top: 10px;
