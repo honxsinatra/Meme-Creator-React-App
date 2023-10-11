@@ -28,7 +28,7 @@ export default function Form() {
     setFormData((prevformData) => ({ ...prevformData, [name]: value }));
   }
   return (
-    <div>
+    <div className="body">
       <form>
         <input
           className="margin"

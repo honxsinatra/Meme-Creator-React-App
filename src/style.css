@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+  }
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -56,9 +79,6 @@ div > button {
   width: auto;
   object-fit: cover;
 }
-/*max-width: 100%;
-  height: auto;*/
-
 .margin {
   margin-right: 10mm;
 }
@@ -69,6 +89,7 @@ div > button {
 .image-container {
   position: relative;
   display: inline-block;
+  animation: scaleAnim 1s ease-in-out;
 }
 
 .topText,
